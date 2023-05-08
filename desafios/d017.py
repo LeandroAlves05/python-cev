@@ -1,7 +1,6 @@
-from math import isqrt
+from math import hypot
 print('======CALCULADORA DA HIPOTENUSA======')
-catOp = int(input('Digite o valor do cateto oposto: '))
-catAd = int(input('Digite o valor do cateto adjacente: '))
-hipot = (catOp**2) + (catAd**2)
-raiz = isqrt(hipot)
-print(f'O comprimento da hipotenusa é aproximadamente igual á: {raiz:.2f}')
+catOp = float(input('Digite o valor do cateto oposto: '))
+catAd = float(input('Digite o valor do cateto adjacente: '))
+hipot = hypot(catOp, catAd)
+print(f'O comprimento da hipotenusa é aproximadamente igual á: {hipot:.2f}')

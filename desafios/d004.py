@@ -1,4 +1,4 @@
-n = input('Digite algo: ')
+n = input('Digite algo: ').strip()
 print (f'É apenas um número? {n.isnumeric()}')
 print (f'São apenas letras? {n.isalpha()}')
 print (f'São apenas espaços? {n.isspace()}')

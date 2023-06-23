@@ -1,3 +1,17 @@
-valor = int(input('Digite o valor: '))
-while valor != 0:
-    
+print('Gerador de PA')
+print('-=-' * 5)
+primTermo = int(input('Digite o primeiro termo: '))
+razao = int(input('Digite a razão da P.A: '))
+termo = primTermo
+cont = 1
+total = 0
+mais = 10
+while mais != 0:
+    total += mais
+    while cont <= total:
+        print(f'{termo} → ', end='')
+        termo += razao
+        cont += 1
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print(f'Progressão finalizada com {total} termos mostrados')
